@@ -16,7 +16,7 @@ import {
 } from "./card.styled";
 import { useHomeContext } from "pages/home";
 import { GoLink } from "react-icons/go";
-import { GrBusinessService, GrLinkedin, GrLocation } from "react-icons/gr";
+import { GrBusinessService, GrGithub, GrLinkedin, GrLocation } from "react-icons/gr";
 
 const Card: React.FC = () => {
   const { github } = useHomeContext();
@@ -44,6 +44,12 @@ const Card: React.FC = () => {
   <a href={github?.blog} target="_blank" rel="noopener noreferrer">
     <GrLinkedin />
     {github?.blog || "Sem blog :("}
+  </a>
+</About>
+<About>
+  <a href={github?.html_url} target="_blank" rel="noopener noreferrer">
+    <GrGithub />
+    {github?.html_url || "Sem blog :("}
   </a>
 </About>
         </InfoContainer>
