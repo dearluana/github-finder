@@ -37,9 +37,11 @@ const Card: React.FC = () => {
             {github?.location || "Brasil"}
           </About>
           <About>
-            <GoLink />
-            {github?.blog || "Sem blog :("}
-          </About>
+  <a href={github?.blog} target="_blank" rel="noopener noreferrer">
+    <GoLink />
+    {github?.blog || "Sem blog :("}
+  </a>
+</About>
         </InfoContainer>
         <Line />
         <GitInfoContainer>
