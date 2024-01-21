@@ -3,6 +3,7 @@ export interface GithubInterface {
   avatar_url: string;
   blog?: string;
   location?: string;
+  company?: string;
   name: string;
   bio?: string;
   public_repos: number;
